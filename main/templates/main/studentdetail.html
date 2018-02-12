@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Student Details</h1>
+
+<form method="POST" class="StudentdetailForm">
+	{% csrf_token %}
+	{{ form.as_p }}
+	<button type="submit" class = "save btn btn-default">Submit</button>
+</form>
+
+{{ message }}
+	{{ s.cpi }}
+
+
+
+
+
+{% endblock %}
+
